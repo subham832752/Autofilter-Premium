@@ -79,7 +79,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'royal_files') # Collection nam
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URL2 Value Else You Will Get Error.
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
-DATABASE_URL2 = environ.get('DATABASE_URI2', "")  # MongoDB URI for the second database (if MULTIPLE_DB is True)
+DATABASE_URL2 = environ.get('DATABASE_URL2', "")  # MongoDB URI for the second database (if MULTIPLE_DB is True)
 # ============================
 # Movie Notification & Update Settings
 # ============================
@@ -265,11 +265,11 @@ Bot_cmds = {
 
 #Don't Change Anything Here
 if MULTIPLE_DB == False:
-    DATABASE_URI = DATABASE_URI
-    DATABASE_URI2 = DATABASE_URI
+    DATABASE_URL = DATABASE_URL
+    DATABASE_URL2 = DATABASE_URL
 else:
-    DATABASE_URI = DATABASE_URI
-    DATABASE_URI2 = DATABASE_URI2
+    DATABASE_URL = DATABASE_URL
+    DATABASE_URL2 = DATABASE_URL2
 
 # ============================
 # Logs Configuration
