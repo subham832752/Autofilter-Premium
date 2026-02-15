@@ -420,7 +420,7 @@ class Database:
     async def update_movie_update_status(self, bot_id, enable):
         await self.update_bot_setting(bot_id, 'MOVIE_UPDATE_NOTIFICATION', enable)
      
-db = Database(DATABASE_URI, DATABASE_NAME)    
-db2 = Database(DATABASE_URI2, DATABASE_NAME)
+db = Database(DATABASE_URL, DATABASE_NAME)    
+db2 = Database(DATABASE_URL2, DATABASE_NAME)
 
 
